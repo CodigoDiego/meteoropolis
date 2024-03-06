@@ -1,0 +1,134 @@
+.header-container{
+    width: 80vw;
+    height: 20vh;
+    margin: auto;
+    box-sizing: border-box;
+    display:flex ;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo-container{
+    float: left;
+    left: 0;
+    width: 28vw;
+    max-width: 28vw;
+    height:12vh;
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.weather-container{
+    float: right;
+    user-select: none;
+    /* background-color: aquamarine; */
+    width: 55vw;
+}
+
+.card-container{
+    width: 55vw;
+    height: 12vh;
+    background-color: white;
+    /* margin-top: 7em; */
+    border-radius: 10em;
+    box-shadow: 0em 0.1em 0.5em rgb(233, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 1.1em;
+    overflow: hidden;
+    /* margin-left: 3em; */
+}
+
+.icon-container{
+    width: 8vh;
+    height: 8vh;
+    background:linear-gradient(rgb(140, 194, 255),rgb(42, 102, 255));
+    border-radius: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    width: 4em;
+    height: 4em;
+}
+
+.city-and-condition{
+    height: 10.5vh;
+    max-width: 30vw;
+    margin-left: 1.5em;
+    margin-right: 1em;
+    align-items: center;
+    box-sizing: border-box;
+    padding:1em 0 1em 0;
+    word-break:break-word;
+    overflow-y: hidden;
+    /* background-color: aquamarine; */
+}
+
+h2{
+    font-weight: 400;
+    margin-top: -1em;
+}
+
+h3{
+    font-weight: 600;
+    /* font-size: 1.2em; */
+}
+h4{
+    margin-top: -0.02em;
+    font-weight: 600;
+}
+
+h5{
+    margin: 0.4em 0.5em 0 0.4em;
+    font-weight: 600;
+    color: #4f4f4fcc;
+}
+
+.spacer{
+    background-color: #e3e3e3cc;
+    width: 0.2%;
+    height: 70%;
+    border-radius: 20%;
+    margin: 0 0.8em 0 0.8em;
+}
+
+.ui-icon{
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    color: #838383cc;
+}
+
+.input{
+    height: 1.8em;
+    width: 14vw;
+    margin-left: 0em;
+    border-style: groove;
+    border-radius: 5em;
+    border-color: #e3e3e3cc;
+    padding: 0 0 0 1em;
+    font-size: medium;
+}
+
+@media(max-width:1200px) {
+    .input{
+        display: none;
+    }
+    h2{
+        font-size: 1em;
+    }
+    h3, h4{
+        font-size: 0.8em;
+    }
+    .spacer{
+        margin: 0 0.5em 0 0.5em;
+    }
+
+}

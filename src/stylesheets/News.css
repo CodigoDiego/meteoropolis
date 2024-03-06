@@ -1,0 +1,57 @@
+.card-container-news{
+  height:73vh;
+  width: 80vw;
+  background-color: rgb(230, 230, 230);
+  margin: auto;
+  margin-top: 0.8em;
+  /* border-radius: 0.5em; */
+  box-shadow: 0em 0.1em 0.5em rgb(232, 232, 232);
+  box-sizing: border-box;
+}
+
+.categories{
+  width: 80vw;
+  height: 6vh;
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cat-selector{
+  height: 6vh;
+  width: 16.3%;
+  font-weight: 400;
+  font-size: 1em;
+  background-color: rgb(21, 21, 21);
+  color: rgb(183, 183, 183);
+  border-style: none;
+  box-sizing: border-box;
+}
+
+.cat-selector:hover{
+  color: white;
+}
+
+.news-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 1em;
+  box-sizing: border-box;
+  margin-top: 2vh;
+  overflow-y:auto;
+  scroll-behavior: smooth;
+  width: 80vw;
+  height: 64vh;
+  padding: 0 1.6em 0 1.6em ;
+}
+
+/* div:last-child{
+  color: aquamarine;
+} */
+
+.active{
+  border-bottom: 2px, solid, aqua;
+  background-color: rgb(63, 63, 63);
+  color: white;
+}

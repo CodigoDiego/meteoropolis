@@ -1,0 +1,45 @@
+.img-container{
+    width: 16vw;
+    height: 22vh;
+    background-color: aqua;
+}
+
+.art-image{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.card{
+    width: 37vw;
+    background-color: rgb(255, 255, 255);
+    height: 22vh;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5em;
+    user-select: none;
+    cursor: pointer;
+    word-break:break-word;
+    margin-bottom: 1em;
+}
+
+.text-container{
+    display: flex;
+    align-items: center;
+    width: 17vw;
+    height: 20vh;
+    margin-left: 2em;
+    /* background-color: rgb(141, 141, 163); */
+}
+
+.card h5{
+    margin-left: -0.05em;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.card h3{
+    margin-top: -0.005em;
+    font-size: 1.2em;
+    font-weight: 600;
+}

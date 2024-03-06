@@ -1,0 +1,20 @@
+html{
+    background-color: rgb(244, 244, 244);
+}
+
+.div-head{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    user-select: none;
+    box-shadow: 0em 0.1em 0.5em rgb(233, 233, 233);
+}
+
+.logo{
+    max-width: 17vw;
+}
