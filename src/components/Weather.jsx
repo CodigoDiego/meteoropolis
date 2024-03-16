@@ -49,7 +49,8 @@ function Weather(){
     Fetch();
   }, [search]);
   
-  const apiUrl= `https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_API_KEY}&q=${search}`;
+  // const apiUrl= `https://api.weatherapi.com/v1/current.json?key=${REACT_APP_API_KEY}&q=${search}`;
+  const apiUrl= `https://api.weatherapi.com/v1/current.json?key=c017f8b662f640cc9b1161818233012&q=${search}`;
   
   const searchCity = async (e) =>{
     e.preventDefault();

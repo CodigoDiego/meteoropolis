@@ -9,11 +9,13 @@ function News(){
     const [articlesApi, setArticles] = useState([{}]);
     const [isActive, setButtonState] =useState(null);
     
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${process.env.REACT_APP_NEWS_KEY}`;
+    // const apiUrl = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${REACT_APP_NEWS_KEY}`;
+    // const apiUrl = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=6716720117bb4de3a037d316985ee7c3`;
+    const apiUrl = `https://gnews.io/api/v4/top-headlines?category=${category}&apikey=${REACT_APP_NEWS_KEY}`;
     
     useEffect(() => {
       Fetch();
-      setArticles(articlesApi.filter(article => article.urlToImage !== null));
+      setArticles(articlesApi.filter(article => article.image !== null));
     }, [category]);
 
   const Fetch = async () =>{
@@ -21,7 +23,7 @@ function News(){
       await fetch(apiUrl).then((res)=>{
         return res.json();
       }).then((data) =>
-        setArticles(data.articles.filter(article => article.urlToImage !== null)));
+        setArticles(data.articles.filter(article => article.image !== null)));
         console.log(articlesApi);
     } catch (error) {
       console.log(error);
@@ -46,7 +48,7 @@ function News(){
             </div>
             <div className="news-container">
                 {articlesApi.map((article)=> 
-                    <Articles image={article.urlToImage} author={article.author} title={article.title} url={article.url}/>
+                    <Articles image={article.image} author={article.author} title={article.title} url={article.url}/>
                 )};
             </div>
 
