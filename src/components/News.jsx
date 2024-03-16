@@ -11,7 +11,7 @@ function News(){
     
     // const apiUrl = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${REACT_APP_NEWS_KEY}`;
     // const apiUrl = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=6716720117bb4de3a037d316985ee7c3`;
-    const apiUrl = `https://gnews.io/api/v4/top-headlines?category=${category}&apikey=${REACT_APP_NEWS_KEY}`;
+    const apiUrl = `https://gnews.io/api/v4/top-headlines?category=${category}&apikey=${process.env.REACT_APP_NEWS_KEY}`;
     
     useEffect(() => {
       Fetch();
