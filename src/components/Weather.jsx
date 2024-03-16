@@ -82,7 +82,8 @@ function Weather(){
     return(
         <div className="header-container">
             <div className="logo-container">
-                <img className="logo" src={logo} alt="Meteoropolis logo"/>
+                {/* <img className="logo" src={logo} alt="Meteoropolis logo"/> */}
+                <h1>METEOROPOLIS</h1>
             </div>
 
             <div className="weather-container">

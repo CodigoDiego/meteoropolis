@@ -10,6 +10,7 @@
 }
 
 .logo-container{
+    user-select: none;
     float: left;
     left: 0;
     width: 28vw;
@@ -69,6 +70,11 @@
     word-break:break-word;
     overflow-y: hidden;
     /* background-color: aquamarine; */
+}
+
+h1{
+    font-weight: 700;
+    font-size:3.5em;
 }
 
 h2{
