@@ -1,7 +1,6 @@
 .img-container{
     width: 16vw;
     height: 22vh;
-    background-color: aqua;
 }
 
 .art-image{
@@ -42,4 +41,12 @@
     margin-top: -0.005em;
     font-size: 1.2em;
     font-weight: 600;
+}
+@media only screen and (max-width: 1040px) {
+    .card{
+        width: 100%;
+    }
+    .img-container{
+        width: 40%;
+    }
 }
